@@ -1,0 +1,2136 @@
+body
+	background-color: #FFF
+.top-bar
+	background-color: #333333
+	font-family: Montserrat
+	font-size: 13px
+	color: #777777
+	a
+		color: #777777
+		padding-top: 17px
+		padding-bottom: 17px
+		transition: background 0.3s linear 0s, color 0.3s linear 0s
+	&-cont
+		max-width: 1170px
+		margin: auto
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		.currency
+			cursor: default
+			display: block
+			flex-flow: column wrap
+			display: flex
+			a
+				color: white
+				span
+					color: #999999
+					cursor: default
+				&:hover
+					color: #00c8c8
+			a
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				ul
+					flex-direction: column
+					list-style: none
+					margin-left: 60px
+					text-transform: uppercase
+					background: none
+					background-color: transparent
+					position: absolute
+					margin-top: 17px
+					border-top: 3px solid #F8F8F8
+					padding-left: 0
+					font-family: Montserrat
+					font-weight: bold
+					transition: background 0.3s linear 0s, color 0.3s linear 0s
+					opacity: 0
+					visibility: hidden
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					.first
+						margin-top: 0
+					li
+						margin-top: 3px
+						color: #7D787A
+						background-color: white
+						padding: 10px
+						background-color: #F8F8F8
+						transition: background 0.3s linear 0s, color 0.3s linear 0s
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+						&:hover
+							color: #00c8c8
+							transform: scale(1.3, 1.3)
+							margin-top: 3px
+							background-color: #F8F8F8
+				&:hover > ul
+					display: flex
+					transform: scale(1,1)
+					box-shadow: 0 5px 15px rgba(0,0,0,0.1)
+					opacity: 1
+					visibility: visible
+
+		.cart
+			display: flex
+			a
+				color: #999999
+				padding-left: 35px
+				padding-top: 17px
+				padding-bottom: 17px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					color: white
+					transform: scale(1.1, 1.1)
+					
+			.basket
+				margin-left: 82px
+				padding: 14px 22px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				.fa
+					font-size: 15px
+				&:hover
+					background-color: #00c8c8
+					color: white
+					
+
+
+#menu
+	font-size: 0
+#panel
+	font-size: 0
+	display: none
+	header
+		button
+			font-size: 25px
+			span
+				text-transform: uppercase
+				font-size: 15px
+				position: absolute
+				top: 6px
+				left: 50px
+// .slideout-panel
+// 	transition: transform 800ms ease
+.ac-container
+	display: none
+.slideout-panel
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+.slideout-open
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+.slideout-menu
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+.slideout-open .slideout-menu
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+
+
+
+.slider
+	background-image: url(../img/slider.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-size: cover
+	background-color: white
+	.slider-cont
+		max-width: 1780px
+		margin: auto
+		.slider-text
+			color: #575153
+			font-family: Montserrat
+			font-size: 450px
+			font-weight: 700
+			text-transform: uppercase
+			display: flex
+			margin: auto
+			max-width: 1529px
+			width: 100%
+			letter-spacing: 70px
+			padding-top: 170px
+			cursor: default
+			padding-bottom: 120px
+			img
+				width: 100%
+				height: 100%
+		.btn
+			display: flex
+			justify-content: flex-end
+			margin-right: 250px
+			padding-bottom: 120px
+			padding-top: 10px
+			transition: background 0.3s linear 0s, color 0.3s linear 0s
+			a
+				color: #454647
+				font-family: Montserrat
+				font-size: 16px
+				font-weight: 400
+				text-transform: uppercase
+				border: 2px solid #737373
+				padding: 18px 30px
+				letter-spacing: 2px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				&:hover
+					background-color: #00c8c8
+					border: none
+					color: white
+					padding: 20px 32px
+
+		.header
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			padding-top: 47px
+			align-items: center
+			width: 100%
+			// position: fixed
+			.logo
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					transform: scale(1.3,1.3)
+				a
+					font-family: Montserrat
+					font-size: 24px
+					text-transform: uppercase
+					font-weight: 700
+					color: black
+					text-decoration: none
+					transition: background 0.3s linear 0s, color 0.3s linear 0s
+					&:hover  
+						color: #00c8c8
+				span
+					font-weight: 400
+
+			.nav	
+				font-family: Montserrat
+				font-size: 13px
+				font-weight: 400
+				line-height: 20px
+				text-transform: uppercase
+				color: #222222
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				a
+					padding-left: 28px
+					font-family: Montserrat
+					font-size: 13px
+					font-weight: 400
+					line-height: 20px
+					text-transform: uppercase
+					color: #222222
+					transition: background 0.3s linear 0s, color 0.3s linear 0s
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					position:relative
+					display: inline-block
+					&:hover 
+						color: #00c8c8
+						transform: scale(1.1, 1.1)
+
+				input
+					margin-left: 50px
+					width: 150px
+					height: 30px
+					border: none
+					background-color: rgba(248, 248, 248, 0)
+					outline: none
+					padding-left: 20px
+					position: relative
+				a
+					ul
+						// display: none
+						flex-direction: column
+						list-style: none
+						position: absolute
+						font-family: Montserrat
+						padding: 50px 30px 62px 
+						box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14)
+						background-color: #f8f8f8
+						list-style-position: inside
+						column-count: 2
+						margin-top: 0
+						opacity: 0
+						visibility: hidden
+						width: 467px
+						.main
+							color: #575153
+							font-family: Montserrat
+							font-size: 17px
+							font-weight: 700
+							line-height: 20px
+							text-transform: uppercase
+							padding-bottom: 30px
+						.right-1
+							position: absolute
+							top: 50px
+							right: 137px
+							color: #575153
+							font-family: Montserrat
+							font-size: 17px
+							font-weight: 700
+							line-height: 20px
+							text-transform: uppercase
+							padding-bottom: 30px
+						.right-2
+							position: absolute
+							top: 100px
+							right: 158px
+						.right-3
+							position: absolute
+							top: 140px
+							right: 170px
+						.right-4
+							position: absolute
+							top: 180px 
+							right: 175px
+						.right-5
+							position: absolute
+							top: 220px
+							right: 149px
+						li
+							margin: 0
+							padding-bottom: 20px
+							color: #727272
+							font-family: Montserrat
+							font-size: 14px
+							font-weight: 300
+							transition: background 0.3s linear 0s, color 0.3s linear 0s
+							text-transform: capitalize
+							&:hover
+								color: #00c8c8
+					&:hover  ul
+						display: flex
+						opacity: 1
+						transition: all .6s cubic-bezier(0.165,0.84,0.44,1)
+						visibility: visible
+						.autumn 
+							max-width: 407px
+							width: 100%
+							background-color: #999999
+							color: #fff
+							font-family: Montserrat
+							font-size: 36px
+							line-height: 48px
+							text-transform: uppercase
+							font-weight: 400
+							padding: 62px 25px
+							text-align: center
+							margin-top: 62px
+							transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+							&:hover
+								color: #f36666
+								transform: scale(1.5,1.5)
+								background-color: transparent
+				.women
+					ul
+						// margin-left: 105px
+				.stores
+					ul
+						// margin-left: 315px
+						padding-bottom: 31px
+						width: 222px
+						margin: 0
+				.icon	
+					padding-left: 5px
+					color: #989898
+					font-size: 14px
+					font-weight: 400
+					line-height: 27px	
+.header.default
+	z-index: 9999
+	position: fixed
+	width: 100%
+	background-color: #F8F8F8
+	margin-top: -94px
+	box-shadow: 5px 3px 15px rgba(0,0,0,0.2)
+	left: 0
+	.logo
+		padding-left: 50px
+	.nav
+		padding-right: 50px
+
+
+
+
+
+
+
+
+
+.line
+	max-width: 1780px
+	margin: auto
+	&-cont
+		padding-top: 62px
+		border-bottom: 1px solid #eee
+
+
+
+
+
+
+
+
+
+
+
+
+
+.items
+	max-width: 1780px
+	margin: auto
+	.items-nav
+		display: flex
+		flex-flow: row wrap
+		padding: 52px 0 
+		a
+			font-family: Montserrat
+			font-size: 13px
+			font-weight: 400
+			line-height: 20px
+			text-transform: uppercase
+			color: #727272
+			margin-right: 55px
+			transition: background 0.3s linear 0s, color 0.3s linear 0s
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			&:hover
+				color: #00c8c8
+				transform: scale(1.1,1.1)
+	.items-content
+		display: flex
+		flex-flow: row wrap
+		.items-cont1
+			display: flex
+			flex-flow: column wrap
+			align-items: center
+			margin: auto
+			p
+				color: #9a9a9a
+				font-family: Montserrat
+				font-size: 21px
+				font-weight: 300
+				text-transform: uppercase
+				margin: 0
+				padding-top: 15px
+				padding-left: 15px
+				padding-right: 337px
+				cursor: default
+				padding-bottom: 460px
+			.sub-it-con 
+				display: flex
+				flex-flow: row 
+				max-width: 900px
+				width: 100%
+				.sub-it-con1 
+					background-image: url("../img/1-it.jpg")
+					background-repeat: no-repeat
+					background-size: cover
+					background-position: center
+					max-width: 420px
+					height: 500px
+					width: 100%
+					margin-right: 30px
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					display: block
+					&:hover
+						box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+					&:hover p
+						color: #00c8c8
+					.hover-it
+						opacity: 0
+						visibility: hidden
+						flex-flow: column wrap
+						align-items: center
+						position: absolute
+						background-color: #FFF
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+						transition: background 0.3s linear 0s, color 0.3s linear 0s
+						padding: 21px 0 17px
+						max-width: 420px
+						width: 100%
+						.mainp
+							color: #727272
+							font-family: Montserrat
+							font-size: 15px
+							font-weight: 400
+							line-height: 20px
+							text-transform: uppercase
+							margin: auto
+							transition: background 0.3s linear 0s, color 0.3s linear 0s
+							transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+							&:hover
+								color: #00c8c8
+								transform: scale(1.1,1.1)
+						.sub-mainp
+							padding: 0
+							cursor: default
+							color: #8e8c8c
+							font-size: 15px
+							font-weight: 400
+							font-family: Montserrat
+							line-height: 20px
+							text-transform: none
+							background-color: transparent
+							text-align: center
+							margin-top: 17px
+							margin-bottom: 19px
+							&:hover
+								box-shadow: none
+						.buttons
+							display: flex
+							justify-content: center
+							background-color: transparent
+							.arrows-btn
+								img
+									padding: 7px 8px
+							a
+								width: 30px
+								height: 30px
+								background-color: #727272
+								border-radius: 50%
+								padding: 5px
+								transition: background 0.3s linear 0s, color 0.3s linear 0s
+								transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+								img
+									padding: 7px 5px
+								&:hover
+									background-color: #00c8c8
+									transform: scale(1.1,1.1)
+							.hart-btn
+								margin: 0 14px 
+								transition: background 0.3s linear 0s, color 0.3s linear 0s
+								transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)	
+								img
+									padding: 8px 6px
+								&:hover
+									background-color: #F36666
+					&:hover .hover-it
+						display: flex
+						box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+						opacity: 1
+						visibility: visible
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+
+
+
+				.sub-it-con2
+					background-image: url("../img/2-it.jpg")
+					background-repeat: no-repeat
+					background-position: center
+					background-size: cover
+					max-width: 420px
+					height: 500px
+					width: 100%
+					margin-right: 30px
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					&:hover
+						box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+					&:hover p
+						color: #00c8c8
+					.hover-it
+						opacity: 0
+						visibility: hidden
+						flex-flow: column wrap
+						align-items: center
+						position: absolute
+						background-color: #FFF
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+						transition: background 0.3s linear 0s, color 0.3s linear 0s
+						padding: 21px 0 17px
+						max-width: 420px
+						width: 100%
+						.mainp
+							color: #727272
+							font-family: Montserrat
+							font-size: 15px
+							font-weight: 400
+							line-height: 20px
+							text-transform: uppercase
+							margin: auto
+							transition: background 0.3s linear 0s, color 0.3s linear 0s
+							transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+							&:hover
+								color: #00c8c8
+								transform: scale(1.1,1.1)
+						.sub-mainp
+							padding: 0
+							cursor: default
+							color: #8e8c8c
+							font-size: 15px
+							font-weight: 400
+							font-family: Montserrat
+							line-height: 20px
+							text-transform: none
+							background-color: transparent
+							text-align: center
+							margin-top: 17px
+							margin-bottom: 19px
+							&:hover
+								box-shadow: none
+						.buttons
+							display: flex
+							justify-content: center
+							background-color: transparent
+							.arrows-btn
+								img
+									padding: 7px 8px
+							a
+								width: 30px
+								height: 30px
+								background-color: #727272
+								border-radius: 50%
+								padding: 5px
+								transition: background 0.3s linear 0s, color 0.3s linear 0s
+								transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+								img
+									padding: 7px 5px
+								&:hover
+									background-color: #00c8c8
+									transform: scale(1.1,1.1)
+							.hart-btn
+								margin: 0 14px 
+								transition: background 0.3s linear 0s, color 0.3s linear 0s
+								transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)	
+								img
+									padding: 8px 6px
+								&:hover
+									background-color: #F36666
+					&:hover .hover-it
+						display: flex
+						box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+						opacity: 1
+						visibility: visible
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			.it-con
+				background-image: url("../img/3-it.jpg")
+				background-repeat: no-repeat
+				background-position: center
+				background-size: cover
+				max-width: 870px
+				height: 704px
+				width: 100%
+				margin-right: 30px
+				margin-top: 30px
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+				&:hover p
+					color: #00c8c8
+				.hover-it
+					opacity: 0
+					visibility: hidden
+					flex-flow: column wrap
+					align-items: center
+					position: absolute
+					background-color: #FFF
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					transition: background 0.3s linear 0s, color 0.3s linear 0s
+					padding: 21px 0 17px
+					max-width: 870px
+					width: 100%
+					.mainp
+						color: #727272
+						font-family: Montserrat
+						font-size: 15px
+						font-weight: 400
+						line-height: 20px
+						text-transform: uppercase
+						margin: auto
+						transition: background 0.3s linear 0s, color 0.3s linear 0s
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+						&:hover
+							color: #00c8c8
+							transform: scale(1.1,1.1)
+					.sub-mainp
+						padding: 0
+						cursor: default
+						color: #8e8c8c
+						font-size: 15px
+						font-weight: 400
+						font-family: Montserrat
+						line-height: 20px
+						text-transform: none
+						background-color: transparent
+						text-align: center
+						margin-top: 17px
+						margin-bottom: 19px
+						&:hover
+							box-shadow: none
+					.buttons
+						display: flex
+						justify-content: center
+						background-color: transparent
+						.arrows-btn
+							img
+								padding: 7px 8px
+						a
+							width: 30px
+							height: 30px
+							background-color: #727272
+							border-radius: 50%
+							padding: 5px
+							transition: background 0.3s linear 0s, color 0.3s linear 0s
+							transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+							img
+								padding: 7px 5px
+							&:hover
+								background-color: #00c8c8
+								transform: scale(1.1,1.1)
+						.hart-btn
+							margin: 0 14px 
+							transition: background 0.3s linear 0s, color 0.3s linear 0s
+							transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)	
+							img
+								padding: 8px 6px
+							&:hover
+								background-color: #F36666
+				&:hover .hover-it
+					display: flex
+					box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+					opacity: 1
+					visibility: visible
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+
+				p
+					padding-bottom: 664px
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					&:hover
+						color: #00c8c8
+						transform: scale(1, 1)
+
+
+		.items-cont2
+			display: flex
+			flex-flow: column wrap
+			align-items: center
+			margin: auto
+			p
+				color: #9a9a9a
+				font-family: Montserrat
+				font-size: 21px
+				font-weight: 300
+				text-transform: uppercase
+				margin: 0
+				padding-top: 15px
+				padding-left: 15px
+				padding-right: 337px
+				cursor: default
+				padding-bottom: 460px
+			.sub-it-con 
+				display: flex
+				flex-flow: row 
+				max-width: 900px
+				width: 100%
+				.sub-it-con1 
+					background-image: url("../img/5-it.jpg")
+					background-repeat: no-repeat
+					background-position: center
+					background-size: cover
+					max-width: 420px
+					height: 500px
+					width: 100%
+					margin-right: 30px
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					&:hover
+						box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+					&:hover p
+						color: #00c8c8
+					.hover-it
+						opacity: 0
+						visibility: hidden
+						flex-flow: column wrap
+						align-items: center
+						position: absolute
+						background-color: #FFF
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+						transition: background 0.3s linear 0s, color 0.3s linear 0s
+						padding: 21px 0 17px
+						max-width: 420px
+						width: 100%
+						.mainp
+							color: #727272
+							font-family: Montserrat
+							font-size: 15px
+							font-weight: 400
+							line-height: 20px
+							text-transform: uppercase
+							margin: auto
+							transition: background 0.3s linear 0s, color 0.3s linear 0s
+							transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+							&:hover
+								color: #00c8c8
+								transform: scale(1.1,1.1)
+						.sub-mainp
+							padding: 0
+							cursor: default
+							color: #8e8c8c
+							font-size: 15px
+							font-weight: 400
+							font-family: Montserrat
+							line-height: 20px
+							text-transform: none
+							background-color: transparent
+							text-align: center
+							margin-top: 17px
+							margin-bottom: 19px
+							&:hover
+								box-shadow: none
+						.buttons
+							display: flex
+							justify-content: center
+							background-color: transparent
+							.arrows-btn
+								img
+									padding: 7px 8px
+							a
+								width: 30px
+								height: 30px
+								background-color: #727272
+								border-radius: 50%
+								padding: 5px
+								transition: background 0.3s linear 0s, color 0.3s linear 0s
+								transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+								img
+									padding: 7px 5px
+								&:hover
+									background-color: #00c8c8
+									transform: scale(1.1,1.1)
+							.hart-btn
+								margin: 0 14px 
+								transition: background 0.3s linear 0s, color 0.3s linear 0s
+								transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)	
+								img
+									padding: 8px 6px
+								&:hover
+									background-color: #F36666
+					&:hover .hover-it
+						display: flex
+						box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+						opacity: 1
+						visibility: visible
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				.sub-it-con2
+					background-image: url("../img/6-it.jpg")
+					background-repeat: no-repeat
+					background-position: center
+					background-size: cover
+					max-width: 420px
+					height: 500px
+					width: 100%
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					&:hover
+						box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+					&:hover p
+						color: #00c8c8
+					.hover-it
+						opacity: 0
+						visibility: hidden
+						flex-flow: column wrap
+						align-items: center
+						position: absolute
+						background-color: #FFF
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+						transition: background 0.3s linear 0s, color 0.3s linear 0s
+						padding: 21px 0 17px
+						max-width: 420px
+						width: 100%
+						.mainp
+							color: #727272
+							font-family: Montserrat
+							font-size: 15px
+							font-weight: 400
+							line-height: 20px
+							text-transform: uppercase
+							margin: auto
+							transition: background 0.3s linear 0s, color 0.3s linear 0s
+							transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+							&:hover
+								color: #00c8c8
+								transform: scale(1.1,1.1)
+						.sub-mainp
+							padding: 0
+							cursor: default
+							color: #8e8c8c
+							font-size: 15px
+							font-weight: 400
+							font-family: Montserrat
+							line-height: 20px
+							text-transform: none
+							background-color: transparent
+							text-align: center
+							margin-top: 17px
+							margin-bottom: 19px
+							&:hover
+								box-shadow: none
+						.buttons
+							display: flex
+							justify-content: center
+							background-color: transparent
+							.arrows-btn
+								img
+									padding: 7px 8px
+							a
+								width: 30px
+								height: 30px
+								background-color: #727272
+								border-radius: 50%
+								padding: 5px
+								transition: background 0.3s linear 0s, color 0.3s linear 0s
+								transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+								img
+									padding: 7px 5px
+								&:hover
+									background-color: #00c8c8
+									transform: scale(1.1,1.1)
+							.hart-btn
+								margin: 0 14px 
+								transition: background 0.3s linear 0s, color 0.3s linear 0s
+								transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)	
+								img
+									padding: 8px 6px
+								&:hover
+									background-color: #F36666
+					&:hover .hover-it
+						display: flex
+						box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+						opacity: 1
+						visibility: visible
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			.it-con
+				background-image: url("../img/4-it.jpg")
+				background-repeat: no-repeat
+				background-position: center
+				background-size: cover
+				max-width: 870px
+				height: 704px
+				width: 100%
+				margin-bottom: 30px
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+				&:hover p
+					color: #00c8c8
+				.hover-it
+					opacity: 0
+					visibility: hidden
+					flex-flow: column wrap
+					align-items: center
+					position: absolute
+					background-color: #FFF
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					transition: background 0.3s linear 0s, color 0.3s linear 0s
+					padding: 21px 0 17px
+					max-width: 870px
+					width: 100%
+					.mainp
+						color: #727272
+						font-family: Montserrat
+						font-size: 15px
+						font-weight: 400
+						line-height: 20px
+						text-transform: uppercase
+						margin: auto
+						transition: background 0.3s linear 0s, color 0.3s linear 0s
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+						&:hover
+							color: #00c8c8
+							transform: scale(1.1,1.1)
+					.sub-mainp
+						padding: 0
+						cursor: default
+						color: #8e8c8c
+						font-size: 15px
+						font-weight: 400
+						font-family: Montserrat
+						line-height: 20px
+						text-transform: none
+						background-color: transparent
+						text-align: center
+						margin-top: 17px
+						margin-bottom: 19px
+						&:hover
+							box-shadow: none
+					.buttons
+						display: flex
+						justify-content: center
+						background-color: transparent
+						.arrows-btn
+							img
+								padding: 7px 8px
+						a
+							width: 30px
+							height: 30px
+							background-color: #727272
+							border-radius: 50%
+							padding: 5px
+							transition: background 0.3s linear 0s, color 0.3s linear 0s
+							transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+							img
+								padding: 7px 5px
+							&:hover
+								background-color: #00c8c8
+								transform: scale(1.1,1.1)
+						.hart-btn
+							margin: 0 14px 
+							transition: background 0.3s linear 0s, color 0.3s linear 0s
+							transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)	
+							img
+								padding: 8px 6px
+							&:hover
+								background-color: #F36666
+				&:hover .hover-it
+					display: flex
+					box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+					opacity: 1
+					visibility: visible
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				p
+					padding-bottom: 664pxp
+					padding-bottom: 664px
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					&:hover
+						color: #00c8c8
+						transform: scale(1,1)
+
+
+
+
+
+
+
+.lookbook
+	width: 100%
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	margin-top: 62px
+	.look1
+		background-image: url("../img/look-men.jpg")
+
+	.look2
+		background-image: url("../img/look-women.jpg")
+	.look3
+		background-image: url("../img/look-you.jpg")
+	.look1, .look2, .look3
+		display: flex
+		flex-flow: column wrap
+		justify-content: center
+		align-items: flex-end
+		text-align: right
+		max-width: 600px
+		width: 100%
+		background-repeat: no-repeat
+		margin: auto
+		transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+		justify-content: center
+		height: 530px
+		&:hover
+			box-shadow: 0 5px 15px rgba(0,0,0,0.1)
+			transform: scale(1,1)
+		&:hover .title
+			color: #00c8c8
+			transform: scale(1,1)
+		.title
+			color: #575153
+			font-family: Montserrat
+			font-size: 48px
+			line-height: 54px
+			text-transform: uppercase
+			font-weight: 700
+			margin-right: 57px
+			transition: background 0.3s linear 0s, color 0.3s linear 0s
+			cursor: default
+			span
+				font-weight: 300
+			&:hover
+				color: #00c8c8
+		.subtitle
+			margin: 0
+			padding: 30px 57px 30px  0
+			color: #727272
+			font-family: Roboto
+			font-size: 15px
+			font-weight: 400
+			line-height: 22px
+			cursor: default
+		.btn
+			color: #454647
+			font-family: Montserrat
+			font-size: 16px
+			font-weight: 400
+			text-transform: uppercase
+			border: 2px solid #454647
+			padding: 19px 44px
+			margin-right: 57px
+			transition: background 0.3s linear 0s, color 0.3s linear 0s
+			&:hover
+				background-color: #00c8c8
+				border: none
+				color: white
+				padding: 21px 46px
+.ac-container 
+	label
+		transition: background 0.3s linear 0s, color 0.3s linear 0s
+
+
+
+
+
+
+
+
+
+
+
+
+.brand-slider
+	background-image: url(../img/brand-slider.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-color: white
+	width: 100%
+	margin-top: 62px
+	.brand-slider-cont
+		padding: 171px 0
+		display: flex
+		flex-flow: column wrap
+		align-items: center
+		font-family: Montserrat
+		background-color: #333333
+		opacity: 0.75
+		cursor: default
+		p
+			margin: 0
+		.title
+			color: #ffffff
+			font-size: 48px
+			line-height: 54px
+			text-transform: uppercase
+			font-weight: 300
+			text-align: center
+			span
+				font-weight: 700
+		.sub-title
+			color: #ffffff
+			font-size: 30px
+			font-weight: 400
+			line-height: 54px
+			text-transform: uppercase
+			text-align: center
+.brand-content
+	max-width: 1170px
+	display: flex
+	flex-flow: row 
+	margin: auto
+	width: 100%
+	padding: 62px 0 0 0
+	font-family: Montserrat
+	img
+		max-width: 570px
+		width: 100%
+	a
+		color: #575153
+		font-size: 18px
+		font-weight: 400
+		line-height: 20px
+		text-transform: uppercase
+		transition: background 0.3s linear 0s, color 0.3s linear 0s
+		&:hover
+			color: #00c8c8
+	.cont-text
+		font-family: Roboto
+		font-size: 15px
+		font-weight: 400
+		line-height: 22px
+		color: #8e8c8c
+		display: flex
+		flex-flow: column wrap
+		cursor: default
+		span
+			color: #727272
+			font-family: Montserrat
+			font-size: 13px
+			font-weight: 400
+			line-height: 20px
+			text-transform: uppercase
+			padding-top: 29px
+	.content-left
+		padding-right: 15px
+		display: flex
+		flex-flow: column wrap
+		a
+			padding-top: 29px
+		.img-1
+			padding-bottom: 62px
+	.content-right
+		padding-left: 15px
+		display: flex
+		flex-flow: column wrap
+		p
+			margin: 0
+		.btn-1
+			padding-top: 61px
+		.btn-2
+			text-transform: none
+			color: #00c8c8
+		.img-2
+			padding-top: 62px
+			padding-bottom: 29px
+		.signature
+			padding-top: 55px
+			display: flex
+			justify-content: space-between
+			flex-flow: row wrap
+			img
+				max-width: 136px
+				width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lookbook-slider
+	background-image: url(../img/brand-slider.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-color: white
+	width: 100%
+	margin-top: 62px
+	.brand-slider-cont
+		padding: 171px 0
+		display: flex
+		flex-flow: column wrap
+		align-items: center
+		font-family: Montserrat
+		background-color: #333333
+		opacity: 0.75
+		cursor: default
+		p
+			margin: 0
+		.title
+			color: #ffffff
+			font-size: 48px
+			line-height: 54px
+			text-transform: uppercase
+			font-weight: 300
+			text-align: center
+			span
+				font-weight: 700
+		.sub-title
+			color: #ffffff
+			font-size: 30px
+			font-weight: 400
+			line-height: 54px
+			text-transform: uppercase
+			text-align: center
+.lookbook-items-nav
+		display: flex
+		flex-flow: row wrap
+		padding: 52px 0 
+		max-width: 1170px
+		width: 100%
+		margin: auto
+		a
+			font-family: Montserrat
+			font-size: 13px
+			font-weight: 400
+			line-height: 20px
+			text-transform: uppercase
+			color: #727272
+			margin-right: 55px
+			transition: background 0.3s linear 0s, color 0.3s linear 0s
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			&:hover
+				color: #00c8c8
+				transform: scale(1.1,1.1)
+.lookbook-content
+	max-width: 1640px
+	width: 100%
+	display: flex
+	flex-flow: column wrap
+	margin: auto
+	font-family: Montserrat
+	.lb-cont-1
+		display: flex
+		flex-flow: row 
+		justify-content: space-around
+		.small
+			display: flex
+			flex-flow: row
+			justify-content: space-around
+			width: 100%
+			.cont-small
+				background-image: url("../img/1-it.jpg")
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center
+				max-width: 420px
+				width: 100%
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 500px
+				&:hover
+					box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+				.first
+					margin-right: 29px	
+					&:hover
+						background-color: #00C8C8
+				a
+					opacity: 0
+					visibility: hidden	
+					width: 42px
+					height: 42px
+					color: #808080
+					font-size: 28px
+					font-weight: 400
+					line-height: 20px
+					padding: 0
+					background-color: #FFF
+					border-radius: 50%
+					transition: background 0.3s linear 0s, color 0.3s linear 0s
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					&:hover
+						background-color: #F36666
+						color: white
+						transform: scale(1.2,1.2)
+					.fa-info
+						padding: 4px 15px
+						font-size: 35px
+					.fa-heart
+						padding: 9px 7px
+				&:hover a 
+					opacity: 1
+					visibility: visible
+			.cont-small-second
+				background-image: url("../img/2-it.jpg")
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center
+				max-width: 420px
+				width: 100%
+				height: 500px
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				display: flex
+				align-items: center
+				justify-content: center
+				margin: 0 30px
+				&:hover
+					box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+				.first
+					margin-right: 29px	
+					&:hover
+						background-color: #00C8C8
+				a
+					opacity: 0
+					visibility: hidden	
+					width: 42px
+					height: 42px
+					color: #808080
+					font-size: 28px
+					font-weight: 400
+					line-height: 20px
+					padding: 0
+					background-color: #FFF
+					border-radius: 50%
+					transition: background 0.3s linear 0s, color 0.3s linear 0s
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					&:hover
+						background-color: #F36666
+						color: white
+						transform: scale(1.2,1.2)
+					.fa-info
+						padding: 4px 15px
+						font-size: 35px
+					.fa-heart
+						padding: 9px 7px
+				&:hover a 
+					opacity: 1
+					visibility: visible
+		.cont-big
+			background-image: url("../img/lb-big-1.jpg")
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			max-width: 740px
+			width: 100%
+			height: 500px
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			&:hover
+				box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+			&:hover .title
+				color: #00C8C8
+			.title
+				color: #575153
+				font-size: 48px
+				line-height: 54px
+				text-transform: uppercase
+				font-weight: 700
+				padding-left: 15px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				cursor: default
+				margin-top: 62px
+				display: flex
+				span
+					font-weight: 300
+			.subtitle
+				color: #727272
+				font-size: 13px
+				font-weight: 700
+				line-height: 20px
+				text-transform: uppercase
+				padding-left: 15px
+				cursor: default
+			p
+				color: #8e8c8c
+				font-family: Roboto
+				font-size: 15px
+				font-weight: 400
+				line-height: 22px
+				padding-left: 15px
+				cursor: default
+			.btn
+				color: #454647
+				font-family: Montserrat
+				font-size: 16px
+				font-weight: 400
+				text-transform: uppercase
+				border: 2px solid #454647
+				padding: 19px 44px
+				margin-right: 57px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				margin: 30px 0 0 15px
+				display: flex
+				max-width: 180px
+				max-height: 89px
+				justify-content: center
+				&:hover
+					background-color: #00c8c8
+					border: none
+					color: white
+					padding: 21px 46px
+	.lb-cont-2
+		display: flex
+		flex-flow: row 
+		margin-top: 30px
+		justify-content: space-around
+		.cont-small
+			background-image: url("../img/4-it.jpg")
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			max-width: 420px
+			width: 100%
+			height: 500px
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			display: flex
+			align-items: center
+			justify-content: center
+			&:hover
+				box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+			.first
+				margin-right: 29px	
+				&:hover
+					background-color: #00C8C8
+			a
+				opacity: 0
+				visibility: hidden	
+				width: 42px
+				height: 42px
+				color: #808080
+				font-size: 28px
+				font-weight: 400
+				line-height: 20px
+				padding: 0
+				background-color: #FFF
+				border-radius: 50%
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					background-color: #F36666
+					color: white
+					transform: scale(1.2,1.2)
+				.fa-info
+					padding: 4px 15px
+					font-size: 35px
+				.fa-heart
+					padding: 9px 7px
+			&:hover a 
+				opacity: 1
+				visibility: visible
+		.cont-small-second
+			background-image: url("../img/3-it.jpg")
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			max-width: 420px
+			width: 100%
+			height: 500px
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 0 30px
+			&:hover
+				box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+			.first
+				margin-right: 29px	
+				&:hover
+					background-color: #00C8C8
+			a
+				opacity: 0
+				visibility: hidden	
+				width: 42px
+				height: 42px
+				color: #808080
+				font-size: 28px
+				font-weight: 400
+				line-height: 20px
+				padding: 0
+				background-color: #FFF
+				border-radius: 50%
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					background-color: #F36666
+					color: white
+					transform: scale(1.2,1.2)
+				.fa-info
+					padding: 4px 15px
+					font-size: 35px
+				.fa-heart
+					padding: 9px 7px
+			&:hover a 
+				opacity: 1
+				visibility: visible
+		.cont-small-third
+			background-image: url("../img/5-it.jpg")
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			max-width: 420px
+			width: 100%
+			height: 500px
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			display: flex
+			align-items: center
+			justify-content: center
+			&:hover
+				box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+			.first
+				margin-right: 29px	
+				&:hover
+					background-color: #00C8C8
+			a
+				opacity: 0
+				visibility: hidden	
+				width: 42px
+				height: 42px
+				color: #808080
+				font-size: 28px
+				font-weight: 400
+				line-height: 20px
+				padding: 0
+				background-color: #FFF
+				border-radius: 50%
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					background-color: #F36666
+					color: white
+					transform: scale(1.2,1.2)
+				.fa-info
+					padding: 4px 15px
+					font-size: 35px
+				.fa-heart
+					padding: 9px 7px
+			&:hover a 
+				opacity: 1
+				visibility: visible
+	.lb-cont-3
+		display: flex
+		flex-flow: row 
+		justify-content: center
+		margin-top: 30px
+		justify-content: space-around
+		.cont-big
+			background-image: url("../img/lb-big-2.jpg")
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			max-width: 1190px
+			width: 100%
+			height: 500px
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			&:hover
+				box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+			&:hover .title
+				color: #00C8C8
+			.title
+				color: #575153
+				font-size: 48px
+				line-height: 54px
+				text-transform: uppercase
+				font-weight: 700
+				padding-left: 15px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				cursor: default
+				margin-top: 62px
+				display: flex
+				span
+					font-weight: 300
+			.subtitle
+				color: #727272
+				font-size: 13px
+				font-weight: 700
+				line-height: 20px
+				text-transform: uppercase
+				padding-left: 15px
+				cursor: default
+			p
+				color: #8e8c8c
+				font-family: Roboto
+				font-size: 15px
+				font-weight: 400
+				line-height: 22px
+				padding-left: 15px
+				cursor: default
+			.btn
+				color: #454647
+				font-family: Montserrat
+				font-size: 16px
+				font-weight: 400
+				text-transform: uppercase
+				border: 2px solid #454647
+				padding: 19px 44px
+				margin-right: 57px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				margin: 30px 0 0 15px
+				display: flex
+				max-width: 180px
+				max-height: 89px
+				justify-content: center
+				&:hover
+					background-color: #00c8c8
+					border: none
+					color: white
+					padding: 21px 46px
+		.cont-small
+			background-image: url("../img/4-it.jpg")
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			max-width: 420px
+			width: 100%
+			height: 500px
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-left: 30px
+			&:hover
+				box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+			.first
+				margin-right: 29px	
+				&:hover
+					background-color: #00C8C8
+			a
+				opacity: 0
+				visibility: hidden	
+				width: 42px
+				height: 42px
+				color: #808080
+				font-size: 28px
+				font-weight: 400
+				line-height: 20px
+				padding: 0
+				background-color: #FFF
+				border-radius: 50%
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					background-color: #F36666
+					color: white
+					transform: scale(1.2,1.2)
+				.fa-info
+					padding: 4px 15px
+					font-size: 35px
+				.fa-heart
+					padding: 9px 7px
+			&:hover a 
+				opacity: 1
+				visibility: visible
+
+
+
+
+
+
+
+
+
+
+
+.registration-slider, .local-slider
+	background-image: url(../img/brand-slider.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-color: white
+	width: 100%
+	margin-top: 62px
+	.registration-slider-cont, .local-slider-cont
+		padding: 171px 0
+		display: flex
+		flex-flow: column wrap
+		align-items: center
+		font-family: Montserrat
+		background-color: #333333
+		opacity: 0.75
+		cursor: default
+		p
+			margin: 0
+		.title
+			color: #ffffff
+			font-size: 48px
+			line-height: 54px
+			text-transform: uppercase
+			font-weight: 300
+			text-align: center
+			span
+				font-weight: 700
+		.sub-title
+			color: #ffffff
+			font-size: 30px
+			font-weight: 400
+			line-height: 54px
+			text-transform: uppercase
+			text-align: center
+.registration-content
+	max-width: 1170px
+	width: 100%
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	align-items: flex-start
+	margin: auto
+	margin-top: 62px
+	font-family: Montserrat
+	form
+		.form-group-btn, .form-group
+			display: flex
+			width: 100%
+			input[type=email], input[type=password]
+				width: 100%
+				height: 40px
+				border: 1px solid #e7e7e7
+				padding: 0 9px
+				margin-bottom: 42px
+				color: #989898
+				font-size: 15px
+				font-family: Roboto				
+				outline: none
+	.border
+		width: 1px
+		height: 445px
+		background-color: #eee
+	.sigin-form
+		width: 100%
+		max-width: 550px
+		p
+			color: #575153
+			font-size: 18px
+			font-weight: 400
+			line-height: 20px
+			text-transform: uppercase
+			cursor: default
+			margin: 0
+			padding-bottom: 42px
+		.form-group-btn
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			margin-top: -12px
+			align-items: center
+			button
+				color: #454647
+				font-size: 16px
+				font-weight: 400
+				text-transform: uppercase
+				border: 2px solid #454647
+				padding: 18px 41px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				max-width: 180px
+				max-height: 89px
+				justify-content: center
+				&:hover
+					background-color: #00c8c8
+					border: none
+					color: white
+					padding: 20px 43px
+			a
+				color: #00c8c8
+				font-size: 15px
+				font-weight: 400
+				line-height: 22px
+				font-family: Roboto
+	.registration-form
+		width: 100%
+		max-width: 550px
+		.input
+			display: flex
+			flex-flow: row wrap
+			justify-content: center
+			position: relative
+			input[type=checkbox]
+				// display: none
+				outline: none
+				margin-top: 10px
+			input[type="checkbox"] + label::before
+				background-image: url("../img/checkbox.png")
+				background-repeat: no-repeat
+				content: ""
+				height: 24px
+				width: 24px
+				display: inline-block
+				margin-right: 25px
+				position: absolute
+				left: 0
+			input[type="checkbox"]:checked + label::before
+				background-position: 0px -25px
+			label
+				color: #8e8c8c
+				font-family: Roboto
+				font-size: 15px
+				font-weight: 400
+				line-height: 22px
+				text-transform: none
+				margin: 0
+				margin-bottom: 40px
+				cursor: pointer
+				margin-left: 15px
+		p
+			color: #575153
+			font-size: 18px
+			font-weight: 400
+			line-height: 20px
+			text-transform: uppercase
+			cursor: default
+			margin: 0
+			padding-bottom: 42px
+		.form-group-reg
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			height: 100%
+			button
+				color: #454647
+				font-size: 16px
+				font-weight: 400
+				text-transform: uppercase
+				border: 2px solid #454647
+				padding: 18px 56px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				justify-content: center
+				height: 69px
+				&:hover
+					background-color: #00c8c8
+					border: none
+					color: white
+					padding: 20px 58px
+			p
+				font-size: 15px
+				font-weight: 400
+				line-height: 22px
+				color: #8e8c8c
+				font-family: Roboto
+				text-align: center
+				text-transform: none
+				a
+					color: #00c8c8
+					font-size: 15px
+					font-weight: 400
+					line-height: 22px
+					font-family: Roboto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.local-cont
+	max-width: 1170px
+	width: 100%
+	display: flex
+	flex-flow: column wrap
+	margin: auto
+	padding: 62px 0
+	font-family: Montserrat
+	cursor: default
+	.btn
+		color: #454647
+		font-family: Montserrat
+		font-size: 16px
+		font-weight: 400
+		text-transform: uppercase
+		border: 2px solid #737373
+		padding: 18px 0
+		letter-spacing: 2px
+		transition: background 0.3s linear 0s, color 0.3s linear 0s
+		width: 218px
+		margin-top: 30px
+		text-align: center
+		&:hover
+			background-color: #00c8c8
+			border: none
+			color: white
+			padding: 20px 2px
+	.title
+		color: #575153
+		font-size: 18px
+		font-weight: 400
+		line-height: 20px
+		text-transform: uppercase
+	.local-text
+		color: #8e8c8c
+		font-family: Roboto
+		font-size: 15px
+		font-weight: 400
+		line-height: 22px
+		p
+			color: #727272
+			font-size: 13px
+			font-weight: 400
+			line-height: 20px
+			text-transform: uppercase
+			font-family: Montserrat
+			margin: 0
+			padding-top: 29px
+			padding-bottom: 18px
+.local-map
+	width: 100%
+	display: flex
+	flex-flow: row wrap
+	background-color: #F8F8F8
+	.map
+		width: 65%
+		select
+			display: none
+		#map
+			height: 530px
+			width: 100%	
+	.addres
+		width: 29%
+		cursor: default
+		.addres-content
+			display: flex
+			flex-flow: column wrap
+			justify-content: center
+			padding: 25px 40px
+			p
+				margin: 0
+				color: #8e8c8c
+				font-family: Roboto
+				font-size: 14px
+				font-weight: 300
+				line-height: 32px
+			.title
+				color: #575153
+				font-family: Montserrat
+				font-size: 18px
+				font-weight: 400
+				line-height: 20px
+				text-transform: uppercase
+				padding-bottom: 29px
+				p
+					margin: 0
+					padding-bottom: 18px
+			.local-text
+				color: #8e8c8c
+				font-family: Roboto
+				font-size: 15px
+				font-weight: 400
+				line-height: 22px
+				padding-bottom: 30px
+				p
+					color: #727272
+					font-family: Montserrat
+					font-size: 13px
+					font-weight: 400
+					line-height: 20px
+					text-transform: uppercase
+					margin: 0
+			.buttons
+				padding-top: 32px
+				display: flex
+				flex-flow: row wrap
+				justify-content: flex-start
+				a
+					background-color: #727272
+					color: white
+					border-radius: 50%
+					width: 30px
+					height: 30px
+					margin: 0 7px
+					transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+					.fa-pinterest
+						padding: 7px 8px
+					.fa-instagram
+						padding: 7px 8px
+					.fa-twitter
+						padding: 7px 8px
+					.fa-facebook
+						padding: 7px 10px
+					&:hover
+						transform: scale(1.3, 1.3)
+						background-color: #00C8C8
+						
+
+
+
+
+
+
+
+.footer
+	width: 100%
+	display: flex
+	margin: auto
+	background-color: #F8F8F8
+	flex-flow: column wrap
+	margin-top: 62px
+	.ac-container
+		display: none
+	.footer-cont-1
+		display: flex
+		padding-bottom: 62px
+		display: flex
+		flex-flow: row wrap
+		padding-bottom: 62px
+		justify-content: space-between
+		align-items: flex-start
+		width: 100%
+		max-width: 1170px
+		margin: auto
+		.colum
+			display: flex
+			flex-flow: column wrap
+			margin-top: 62px
+			margin-bottom: 0
+
+			.main
+				color: #575153
+				font-family: Montserrat
+				font-size: 13px
+				font-weight: 700
+				line-height: 20px
+				text-transform: uppercase
+				margin-bottom: 33px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			a
+				color: #727272
+				font-family: Montserrat
+				font-size: 14px
+				font-weight: 300
+				line-height: 30px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					color: #00c8c8
+					transform: scale(1.1, 1.1)
+			.tel
+				padding-top: 30px
+	.footer-btn
+		display: flex
+		justify-content: center
+		width: 100%
+		max-width: 1170px
+		margin: auto
+		align-items: center
+		justify-content: space-between
+		flex-flow: row wrap
+		&-left
+			background-color: #333333
+			font-family: Montserrat
+			font-size: 36px
+			line-height: 48px
+			text-transform: uppercase
+			font-weight: 700
+			text-align: center
+			padding: 52px 67px
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			margin: auto
+			a
+				color: white
+				span
+					font-weight: 300
+			&:hover
+				transform: scale(1.3,1.3)
+				background-color: transparent
+			&:hover a
+				color: #F36666
+		&-right
+			background-color: #00C8C8
+			display: flex
+			justify-content: center
+			width: 100%
+			max-width: 570px
+			height: 200px
+			align-items: center
+			margin: auto
+			a
+				padding: 27px
+				color: #ffffff
+				font-size: 36px
+				font-weight: 400
+				line-height: 48px
+				text-transform: uppercase
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+				&:hover
+					transform: scale(1.6,1.6)
+				&:hover .footer-btn-right
+					background-color: white
+	.cont-2
+		width: 100%
+		background-color: #333333
+		margin-top: 56px
+		padding: 8px 0
+		.footer-cont-2
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			max-width: 1170px
+			width: 100%
+			margin: auto
+			p
+				margin: 0
+				color: #999999
+				font-family: Montserrat
+				font-size: 13px
+				font-weight: 400
+				line-height: 30px
+				cursor: default
