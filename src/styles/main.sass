@@ -119,6 +119,8 @@ body
 	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
 .slideout-menu
 	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+	a
+		transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
 .slideout-open .slideout-menu
 	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
 
@@ -1259,7 +1261,7 @@ body
 	.lb-cont-1
 		display: flex
 		flex-flow: row 
-		justify-content: space-around
+		justify-content: space-between
 		.small
 			display: flex
 			flex-flow: row
@@ -1321,7 +1323,6 @@ body
 				display: flex
 				align-items: center
 				justify-content: center
-				margin: 0 30px
 				&:hover
 					box-shadow: 0 5px 15px rgba(0,0,0,0.3)
 				.first
@@ -1420,7 +1421,7 @@ body
 		display: flex
 		flex-flow: row 
 		margin-top: 30px
-		justify-content: space-around
+		justify-content: space-between
 		.cont-small
 			background-image: url("../img/4-it.jpg")
 			background-repeat: no-repeat
@@ -1470,7 +1471,7 @@ body
 			background-repeat: no-repeat
 			background-size: cover
 			background-position: center
-			max-width: 420px
+			max-width: 800px
 			width: 100%
 			height: 500px
 			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
@@ -1770,6 +1771,7 @@ body
 				max-width: 180px
 				max-height: 89px
 				justify-content: center
+				background-color: #FFF
 				&:hover
 					background-color: #00c8c8
 					border: none
@@ -1840,6 +1842,7 @@ body
 				transition: background 0.3s linear 0s, color 0.3s linear 0s
 				justify-content: center
 				height: 69px
+				background-color: #FFF
 				&:hover
 					background-color: #00c8c8
 					border: none
@@ -1859,6 +1862,7 @@ body
 					font-weight: 400
 					line-height: 22px
 					font-family: Roboto
+
 
 
 
@@ -2134,3 +2138,99 @@ body
 				font-weight: 400
 				line-height: 30px
 				cursor: default
+				position: relative
+				span
+					font-size: 7px
+					text-transform: uppercase
+					position: absolute
+					top: 0
+					right: -15px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.toggle_menu
+	position: fixed
+	padding: 15px 20px 15px 15px
+	color: #575153
+	cursor: pointer
+	z-index: 100000
+	opacity: 0
+	transition: all 0.5s ease-in-out
+	visibility: hidden
+	&:hover
+		color: #00C8C8
+		transform: scale(1.2, 1.2)
+	p
+		display: inline-block
+		margin: 0
+		position: absolute
+		padding-left: 5px
+		padding-top: 8px
+		font-family: Montserrat
+		text-transform: uppercase
+		font-size: 15px
+
+	
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before
+  font-size: 30px
+
+.sidebar_menu
+  position: fixed
+  margin-left: -250px
+  overflow: hidden
+  background-color: #F8F8F8
+  opacity: 0
+  transition: all 0.5s ease-in-out
+  width: 0
+  height: 100%
+
+.fa-times
+  position: absolute
+  right: 10px
+  top: 6px
+  cursor: pointer
+  color: #575153
+  transition: all 0.5s ease-in-out
+  &:hover
+    color: #F36666
+    transform: rotate(90deg)
+
+.fa-remove:before, .fa-close:before, .fa-times:before
+  font-size: 25px
+
+.open_menu
+  width: 250px
+  margin-left: 0
+  opacity: 1
+  transition: all 0.5s ease-in-out
+  position: fixed
+
+.opacity_null
+  opacity: 0
+  transition: all 0.5s ease-in-out
