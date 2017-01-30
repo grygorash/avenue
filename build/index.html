@@ -769,11 +769,13 @@
 					$(".fa-times").click(function(){
 						$(".sidebar_menu").removeClass("open_menu");
 						$(".toggle_menu").removeClass("opacity_null");
+						$("body").removeClass("overflow_body");
 					});
 
 					$(".toggle_menu").click(function(){
 						$(".sidebar_menu").addClass("open_menu");
 						$(".toggle_menu").addClass("opacity_null");
+						$("body").addClass("overflow_body");
 					});
 				});
 			</script>
