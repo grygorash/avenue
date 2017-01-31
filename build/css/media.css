@@ -173,6 +173,12 @@
 
 }
 @media only screen and (max-width : 1140px) {
+	.men-content .men-right{
+		padding-left: 0;
+	}
+	.men-content{
+		justify-content: center;
+	}
 
 
 	.footer .footer-btn-left {
@@ -231,7 +237,45 @@
 
 
 @media only screen and (max-width : 870px) {
-	.pre-local-cont, .pre-brand, .pre-reg, .pre-ac{
+
+	.brand-slider .brand-slider-cont .sub-title, .lookbook-slider .brand-slider-cont .sub-title, .local-slider .local-slider-cont .sub-title, .registration-slider .registration-slider-cont .sub-title{
+		font-size: 20px;
+	}
+	.footer .footer-btn-left{
+		font-size: 20px;
+	}
+	.men-content .men-right .review .share, .men-content .men-right ul{
+		text-align: center;
+	}
+	.men-content .men-right .review .share{
+		padding-top: 10px;
+	}
+	#reviewStars-input{
+		padding-bottom: 10px;
+		padding-right: 10px;
+	}
+	.men-content .men-right .buttons-2 .cart{
+		margin-bottom: 20px;
+	}
+	.men-content .men-right .buttons-2{
+		justify-content: space-around
+	}
+	.men-content .men-right .choose{
+		justify-content: space-around
+	}
+	.men-content .men-right .avail{
+		align-items: center
+	}
+	.men-content .men-right .review{
+		justify-content: center
+	}
+	.men-content .men-right {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+	.pre-local-cont, .pre-brand, .pre-reg, .pre-ac, .pre-men-content{
 		padding: 0 20px;
 	}
 
@@ -529,6 +573,9 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.men-content .men-right .buttons-2 a{
+		font-size: 13px;
+	}
 	.lookbook-content .lb-cont-1 .cont-big .title {
 		font-size: 23px;
 	}

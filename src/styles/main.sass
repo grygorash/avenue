@@ -339,7 +339,7 @@ body
 	position: fixed
 	width: 100%
 	background-color: #F8F8F8
-	margin-top: -94px
+	margin-top: -98px
 	box-shadow: 5px 3px 15px rgba(0,0,0,0.2)
 	left: 0
 	.logo
@@ -1081,6 +1081,423 @@ body
 
 
 
+
+.men-slider
+	.sub-title
+		span
+			color: #00C8C8
+.men-content
+	display: flex
+	flex-flow: row wrap
+	max-width: 1170px
+	width: 100%
+	margin: auto
+	font-family: Montserrat
+	.men-left
+		max-width: 570px
+		width: 100%
+		padding-top: 62px
+		.slider
+			.owl-carousel
+			.owl-nav
+				background-color: #FFF
+			.owl-prev
+				background-image: url("../img/prev.png")
+				width: 45px
+				height: 55px
+				position: absolute
+				top: 46%
+				background-color: #00C8C8
+				background-repeat: no-repeat
+				background-position: 10px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				&:hover
+					background-color: #FFF
+					background-image: url("../img/prev-hover.png")
+			.owl-next
+				background-image: url("../img/next.png")
+				width: 45px
+				height: 55px
+				position: absolute
+				top: 46%
+				right: 0
+				background-color: #00C8C8
+				background-repeat: no-repeat
+				background-position: 17px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				&:hover
+					background-color: #FFF
+					background-image: url("../img/next-hover.png")
+			.owl-dots
+				display: flex
+				justify-content: center
+				position: absolute
+				bottom: 10px
+				justify-content: center
+				margin: auto
+				max-width: 72px
+				right: 44%
+				.owl-dot
+					border: 2px solid white
+					width: 10px
+					height: 10px
+					margin: 0 5px
+				.active
+					border: 2px solid #00C8C8
+
+
+	.men-right
+		max-width: 570px
+		width: 100%
+		padding-left: 30px
+		p
+			color: #575153
+			font-size: 18px
+			font-weight: 400
+			line-height: 20px
+			text-transform: uppercase
+			cursor: default
+			margin: 0
+			padding-top: 62px
+			padding-bottom: 30px
+		.review
+			display: flex
+			flex-flow: row wrap
+			.border
+				color: #8C8C8C
+				padding: 0 15px
+				cursor: default
+			.add
+				a
+					font-size: 15px
+					color: #8C8C8C
+					transition: background 0.3s linear 0s, color 0.3s linear 0s
+					&:hover
+						color: #00c8c8
+			.share
+				display: flex
+				p
+					padding-top: 0
+					padding-bottom: 0
+					margin: 0
+					font-size: 15px
+					text-transform: capitalize
+					color: #8C8C8C
+				.buttons
+					display: flex
+					flex-flow: row wrap
+					justify-content: space-around
+					a
+						margin: 0 5px
+						color: #8C8C8C
+						transition: background 0.3s linear 0s, color 0.3s linear 0s
+						transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+						&:hover
+							color: #00c8c8
+							transform: scale(1.2,1.2)
+		.price
+			margin: 0
+			padding-top: 27px
+			padding-bottom: 37px
+			color: #F36666
+			font-family: Roboto
+			font-size: 30px
+			text-transform: uppercase
+			position: relative
+			span
+				text-decoration: line-through
+				color: #9a9a9a
+		.avail
+			display: flex
+			flex-flow: column wrap
+			p
+				margin: 0
+				padding: 0
+				font-weight: 400
+				line-height: 30px
+				color: #8c8c8c
+				font-family: Roboto
+				font-size: 15px
+				text-transform: capitalize
+				&:last-child
+					padding-bottom: 30px
+				span
+					color: #575153
+					font-family: Montserrat
+					font-size: 13px
+					text-transform: uppercase
+				a
+					color: #8c8c8c
+					transition: background 0.3s linear 0s, color 0.3s linear 0s
+					&:hover
+						color: #00C8C8
+		.info
+			margin: 0
+			padding: 0
+			color: #8e8c8c
+			font-family: Roboto
+			font-size: 15px
+			font-weight: 400
+			line-height: 22px
+			text-transform: none
+		ul
+			padding: 10px 0 0
+			margin: 0	
+			li
+				text-decoration: none
+				list-style: none
+				font-family: Roboto
+				font-size: 15px
+				font-weight: 400
+				color: #8e8c8c
+				line-height: 24px
+		.choose
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			padding-top: 27px
+			p
+				padding: 0
+				margin: 0
+				color: #575153
+				font-family: Montserrat
+				font-size: 13px
+				font-weight: 400
+				line-height: 30px
+				text-transform: uppercase
+		.buttons-2
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			padding-top: 59px
+			a
+				border: 2px solid #737373
+				background-color: rgba(115, 115, 115, 0)
+				color: #454647
+				font-family: Montserrat
+				font-size: 16px
+				font-weight: 400
+				text-transform: uppercase
+				display: flex
+				justify-content: center
+				align-items: center
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				&:hover
+					background-color: #333333
+					border: 2px solid  #333333
+					color: white
+				&:hover .fa-shopping-cart
+					color: #00C8C8
+				&:hover .fa-heart-o
+					color: #F36666
+				.fa
+					padding-right: 10px
+					font-size: 18px
+			.cart
+				max-width: 240px
+				padding: 18px 49px
+			.look
+				max-width: 300px
+				padding: 18px 53px
+		.compaire
+			padding-top: 30px
+			img
+				background-color: #727272
+				padding: 7px
+				border-radius: 50%
+				position: absolute
+				left: -40px
+				top: -6px
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+			a
+				position: relative
+				margin-left: 40px
+				color: #454647
+				font-family: Montserrat
+				font-size: 14px
+				font-weight: 400
+				text-transform: uppercase
+				transition: background 0.3s linear 0s, color 0.3s linear 0s
+				&:hover
+					color: #00C8C8
+				&:hover img
+					background-color: #00C8C8
+					transform: scale(1.2,1.2)
+.men-accordion
+	display: flex
+	opacity: 1
+	max-width: 1170px
+	width: 100%
+	.ac-container
+		display: flex
+		width: 100%
+
+
+label.selectGeneral
+  display: block
+  position: relative
+  width: 170px
+  height: 35px
+  font-size: 14px
+  font-weight: normal
+  border: 1px solid #e7e7e7
+  border-radius: 0
+  font-family: Roboto
+  .fa
+    position: absolute
+    right: 13px
+    z-index: 10
+    top: 10px
+    color: #989898
+  &:before
+    content: attr(placeholder)
+    display: inline-block
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    max-width: 100%
+    height: 34px
+    padding-left: 10px
+    text-align: left
+    line-height: 34px
+    white-space: nowrap
+    color: #adadad
+    overflow-x: hidden
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+  &:after
+    display: inline-block
+    position: absolute
+    top: 0
+    right: 0
+    color: #7e7e7e
+    width: 34px
+    height: 34px
+    text-align: center
+    line-height: 31px
+    background-color: #ffffff
+    box-sizing: border-box
+    transform: rotate(90deg)
+  label
+    display: inline-block
+    min-width: 100%
+    height: 34px
+    font-size: 12px
+    font-weight: normal
+    line-height: 34px
+    white-space: nowrap
+    padding: 0 10px
+    background-color: #ffffff
+    box-sizing: border-box
+    font-family: Roboto
+    color: #989898
+  input, label
+    display: none
+  div
+    min-width: 100%
+    max-height: 500px
+    overflow-x: hidden
+  input[type="radio"]
+    &:checked
+      ~ div
+        position: absolute
+        top: 34px
+        z-index: 999
+        overflow-y: auto
+        box-shadow: -1px 0 0 #e7e7e7, 1px 0 0 #e7e7e7
+        border-top: 1px solid #e7e7e7
+        border-bottom: 1px solid #e7e7e7
+        > label
+          display: block
+      + label
+        display: block
+      ~ div > label:hover
+        background-color: #00C8C8
+        color: white
+    &:not(:checked) ~ div > input[type="radio"]:checked + label
+      position: relative
+      z-index: -1
+
+#reviewStars-input
+  p
+    margin: 0
+    padding-left: 10px
+    display: inline-block
+    float: right
+    line-height: 20px
+    padding-top: 0
+    padding-bottom: 0
+    font-size: 15px
+    text-transform: none
+    color: #8C8C8C
+  input:checked ~ label
+    background: url('../img/stars.png') no-repeat
+  label
+    background: url('../img/stars.png') no-repeat
+    &:hover
+      background: url('../img/stars.png') no-repeat
+      ~ label
+        background: url('../img/stars.png') no-repeat
+  position: relative
+  float: left
+  input
+    opacity: 0
+    width: 43px
+    height: 40px
+    position: absolute
+    top: 0
+    z-index: 0
+    transition: background 0.3s linear 0s, color 0.3s linear 0s
+    &:checked ~ label
+      background-position: 0 -20px
+      height: 20px
+      width: 19px
+  label
+    background-position: 0 0
+    height: 20px
+    width: 19px
+    float: right
+    cursor: pointer
+    position: relative
+    z-index: 1
+    transition: background 0.3s linear 0s, color 0.3s linear 0s
+    &:hover
+      background-position: 0 -20px
+      height: 20px
+      width: 19px
+      ~ label
+        background-position: 0 -20px
+        height: 20px
+        width: 19px
+        transition: background 0.3s linear 0s, color 0.3s linear 0s
+  #star-0
+    display: none
+  #star-1
+    display: none
+  #star-2
+    display: none
+  #star-3
+    display: none
+  #star-4
+    display: none
+  #star-5
+    display: none
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
 .brand-slider
 	background-image: url(../img/brand-slider.jpg)
 	background-position: center center
@@ -1107,8 +1524,11 @@ body
 			text-transform: uppercase
 			font-weight: 300
 			text-align: center
+			font-family: Roboto
 			span
 				font-weight: 700
+				font-family: Montserrat
+
 		.sub-title
 			color: #ffffff
 			font-size: 30px
@@ -1222,8 +1642,11 @@ body
 			text-transform: uppercase
 			font-weight: 300
 			text-align: center
+			font-family: Roboto
 			span
 				font-weight: 700
+				font-family: Montserrat
+
 		.sub-title
 			color: #ffffff
 			font-size: 30px
@@ -1705,8 +2128,10 @@ body
 			text-transform: uppercase
 			font-weight: 300
 			text-align: center
+			font-family: Roboto
 			span
 				font-weight: 700
+				font-family: Montserrat
 		.sub-title
 			color: #ffffff
 			font-size: 30px

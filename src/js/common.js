@@ -42,7 +42,7 @@ $('#list-links li').hover(function(){
 $('a[href^="#"]').click(function(){
     var el = $(this).attr('href');
     $('body').animate({
-        scrollTop: $(el).offset().top - 87}, 1000);
+        scrollTop: $(el).offset().top -30}, 1000);
     return false;
 });
 });

@@ -18,7 +18,7 @@
 
 
 	<!-- Top Bar -->
-	<div class="top-bar">
+	<div class="top-bar" id="home">
 		<div class="top-bar-cont">
 			<div class="currency">
 				<a href="#"><span>Currency : </span>GBP <i class="fa fa-sort-desc" aria-hidden="true"></i>
@@ -29,8 +29,8 @@
 				</a>
 			</div>
 			<div class="cart">
-				<a href="#">Register</a>
-				<a href="#">Sign In</a>
+				<a href="#register">Register</a>
+				<a href="#register">Sign In</a>
 				<a href="#" class="basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;empty </a>
 			</div>
 		</div>
@@ -57,8 +57,8 @@
 				<input id="menu-2" name="accordion-1" type="checkbox" />
 				<label for="menu-2">Your account <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
 				<article class="mnu-1">
-					<a href="#">Sign in</a> <br>
-					<a href="#">Register</a> <br>
+					<a href="#register">Sign in</a> <br>
+					<a href="#register">Register</a> <br>
 					<a href="#">View cart</a>
 				</article>
 			</div>
@@ -112,7 +112,7 @@
 			</div>
 			<div>
 				<input id="menu-5" name="accordion-1" type="checkbox" />
-				<label for="menu-5">the brand
+				<a href="#brand"><label>the brand</label></a>
 				</div>
 				<div>
 					<input id="menu-7" name="accordion-1" type="checkbox" />
@@ -140,10 +140,10 @@
 		<div class="slider-cont">
 			<div class="header" id="header">
 				<div class="logo">
-					<a href="#">Avenue <span>Fashion</span></a>
+					<a href="#home">Avenue <span>Fashion</span></a>
 				</div>
 				<div class="nav">
-					<a href="#">mens <i class="fa fa-angle-down"></i>
+					<a href="#mens">mens <i class="fa fa-angle-down"></i>
 						<ul>
 							<li class="main">casuals</li>
 							<li>Jackets</li>
@@ -160,7 +160,7 @@
 							<li class="right-5">Trousers</li>
 						</ul>
 					</a>
-					<a href="#" class="women"> womens <i class="fa fa-angle-down"></i>
+					<a href="#mens" class="women"> womens <i class="fa fa-angle-down"></i>
 						<ul>
 							<li class="main">casuals</li>
 							<li>Jackets</li>
@@ -177,9 +177,9 @@
 							<li class="right-5">Trousers</li>
 						</ul>
 					</a>
-					<a href="#">the brand</a>
-					<a href="#">look book</a>
-					<a href="#" class="stores">local stores</a>
+					<a href="#brand">the brand</a>
+					<a href="#look">look book</a>
+					<a href="#stores" class="stores">local stores</a>
 					<input type="text" placeholder="Search..."> <a href="#" class="icon"><i class="fa fa-search" aria-hidden="true"></i></a> 
 				</div>
 			</div>
@@ -353,51 +353,351 @@
 
 
 
-
-
-
-
-	<!-- Brand -->
-	<div class="brand-slider">
-		<div class="brand-slider-cont">
-			<p class="title"><span>the</span> brand</p>
-			<p class="sub-title">company slogan goes here</p>
+	<!-- Men's -->	
+	<div class="men-slider brand-slider">
+		<div class="brand-slider-cont" id="mens">
+			<p class="title"><span>Product</span> view</p>
+			<p class="sub-title">mens - casuals - hoodies & sweatshirts - <span>ave classic sweatshirt</span></p>
 		</div>
 	</div>
-	<div class="pre-brand">
-		<div class="brand-content">
-			<div class="content-left">
-				<img src="img/brand-content-1.jpg" alt="" class="img-1">
-				<img src="img/brand-content-2.jpg" alt="">
-				<a href="#">our values, vision and strategy</a>
-				<div class="cont-text">
-					<span>The above image would be a great place for an advertising video</span> <br>
-					Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a, molestie tempus mi maecenas sagittis ornare.
-					Pellentesque sapien mi, tincidunt nec magna vitae, volutpat elementum odioni lorem Aliquam tempor massa vitae augue mattis tempor id in ante ut augue erat, luctus eil.
+	
+	<div class="men-content">
+		<div class="men-left">
+			<div class="slider"
+			><div class="owl-carousel">
+			<div class="item"><a href="#"><img src="img/slider-men.png" alt=""></a></div>
+			<div class="item"><a href="#"><img src="img/slider-men.png" alt=""></a></div>
+			<div class="item"><a href="#"><img src="img/slider-men.png" alt=""></a></div>
+		</div>
+	</div>
+</div>
+<div class="pre-men-content">
+	<div class="men-right">
+		<p class="name">Ave classic sweatshirt</p>
+		<div class="review">
+			<div id="reviewStars-input">
+				<p>3 Review(s)</p>
+				<input id="star-4" type="radio" name="reviewStars"/>
+				<label title="gorgeous" for="star-4"></label>
+				<input id="star-3" type="radio" name="reviewStars" checked/>
+				<label title="good" for="star-3"></label>
+				<input id="star-2" type="radio" name="reviewStars"/>
+				<label title="regular" for="star-2"></label>
+				<input id="star-1" type="radio" name="reviewStars"/>
+				<label title="poor" for="star-1"></label>
+				<input id="star-0" type="radio" name="reviewStars"/>
+				<label title="bad" for="star-0"></label>
+			</div>
+			<div class="border">|</div>
+			<div class="add"><a href="#">Add a Review</a></div>
+			<div class="border">|</div>
+			<div class="share">
+				<p>Share:</p> 
+				<div class="buttons">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 				</div>
 			</div>
-			<div class="content-right">
-				<a href="#" class="btn-1">hand designed clothing</a>
-				<div class="cont-text">
-					<span>established in 2013, avenue fashion Sed dictum elit vel sapien luctus eras</span> <br>
-					Praesent feugiat malesuada tristique maecenas rhoncus diam eget quam vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta magnis disut parturient montes, nascetur ridiculus mus. Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
-				</div>
-				<img src="img/brand-content-3.jpg" alt="" class="img-2">
-				<a href="#">Ethical trading</a>
-				<div class="cont-text">
-					<span>we oversee the working conditions of the people in the supply chain</span> <br>
-					<p>Nullam dapibus consectetur neque, faucibus porttitor purus iaculis sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper arcu lorem
-						Pellentesque congue justo esteir pellentesque aliquet massa eget posuere tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit. <a href="#" class="btn-2">A link <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+		</div>
+		<p class="price"><span>£107</span> £89.99</p>
+		<div class="avail">
+			<p> <span>Availability:</span> In stock</p>
+			<p> <span>Product Code: </span>#499577</p>
+			<p> <span>Tags:</span> <a href="#">Classic</a>, <a href="#">Casual</a>, <a href="#">V-neck</a>, <a href="#">Loose</a></p>
+		</div>
+		<p class="info">Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.</p>
+		<ul>
+			<li>•  Elasticated cuffs</li>
+			<li>•  Casual fit</li>
+			<li>•  100% Cotton</li>
+			<li>•  Free shipping with 4 days delivery</li>
+		</ul>
+		<div class="choose">
+			<div class="color">
+				<p>Color</p>
+				<label class="selectGeneral" placeholder="Select Color"><i class="fa fa-angle-down"></i>
+					<input type="radio" name="color">
+					<div>
+						<input type="radio" name="color" value="black" id="black">
+						<label for="black">Black</label>
+
+						<input type="radio" name="color" value="red" id="red">
+						<label for="red">Red</label>
+
+						<input
+						type="radio" name="color" value="green" id="green">
+						<label for="green">Green</label>
 					</div>
-					<div class="signature">
-						<img src="img/signature-1.png" alt="">
-						<img src="img/signature-2.png" alt="">
-						<img src="img/signature-3.png" alt="">
+				</label>
+
+			</div>
+			<div class="size">
+				<p>Size</p>
+				<label class="selectGeneral" placeholder="Select Size"><i class="fa fa-angle-down"></i>
+					<input type="radio" name="size">
+					<div>
+						<input type="radio" name="size" value="s" id="s">
+						<label for="s">S</label>
+
+						<input type="radio" name="size" value="m" id="m">
+						<label for="m">M</label>
+
+						<input type="radio" name="size" value="l" id="l">
+						<label for="l">L</label>
+
+						<input type="radio" name="size" value="XL" id="XL">
+						<label for="XL">XL</label>
+
+						<input type="radio" name="size" value="XXL" id="XXL">
+						<label for="XXL">XXL</label>
 					</div>
+				</label>
+			</div>
+			<div class="qty">
+				<p>qty</p>
+				<label class="selectGeneral" placeholder="Select Quantity"><i class="fa fa-angle-down"></i>
+					<input type="radio" name="qty">
+					<div>
+						<input type="radio" name="qty" value="1" id="1">
+						<label for="1">1</label>
+
+						<input type="radio" name="qty" value="2" id="2">
+						<label for="2">2</label>
+
+						<input type="radio" name="qty" value="3" id="3">
+						<label for="3">3</label>
+
+						<input type="radio" name="qty" value="4" id="4">
+						<label for="4">4</label>
+
+						<input type="radio" name="qty" value="5" id="5">
+						<label for="5">5</label>
+					</div>
+				</label>
+			</div>
+		</div>
+		<div class="buttons-2">
+			<a href="#" class="cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+			<a href="#" class="look"><i class="fa fa-heart-o" aria-hidden="true"></i>Add to LookBook</a>
+		</div>
+		<div class="compaire">
+			<a href="#"><img src="img/arrows-btn.png">Add to Compare</a>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="line"><div class="line-cont"></div></div>
+
+
+
+
+
+
+
+
+<!-- Brand -->
+<div class="brand-slider" id="brand">
+	<div class="brand-slider-cont">
+		<p class="title"><span>the</span> brand</p>
+		<p class="sub-title">company slogan goes here</p>
+	</div>
+</div>
+<div class="pre-brand">
+	<div class="brand-content">
+		<div class="content-left">
+			<img src="img/brand-content-1.jpg" alt="" class="img-1">
+			<img src="img/brand-content-2.jpg" alt="">
+			<a href="#">our values, vision and strategy</a>
+			<div class="cont-text">
+				<span>The above image would be a great place for an advertising video</span> <br>
+				Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a, molestie tempus mi maecenas sagittis ornare.
+				Pellentesque sapien mi, tincidunt nec magna vitae, volutpat elementum odioni lorem Aliquam tempor massa vitae augue mattis tempor id in ante ut augue erat, luctus eil.
+			</div>
+		</div>
+		<div class="content-right">
+			<a href="#" class="btn-1">hand designed clothing</a>
+			<div class="cont-text">
+				<span>established in 2013, avenue fashion Sed dictum elit vel sapien luctus eras</span> <br>
+				Praesent feugiat malesuada tristique maecenas rhoncus diam eget quam vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta magnis disut parturient montes, nascetur ridiculus mus. Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
+			</div>
+			<img src="img/brand-content-3.jpg" alt="" class="img-2">
+			<a href="#">Ethical trading</a>
+			<div class="cont-text">
+				<span>we oversee the working conditions of the people in the supply chain</span> <br>
+				<p>Nullam dapibus consectetur neque, faucibus porttitor purus iaculis sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper arcu lorem
+					Pellentesque congue justo esteir pellentesque aliquet massa eget posuere tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit. <a href="#" class="btn-2">A link <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+				</div>
+				<div class="signature">
+					<img src="img/signature-1.png" alt="">
+					<img src="img/signature-2.png" alt="">
+					<img src="img/signature-3.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="line"><div class="line-cont"></div></div>
+
+
+
+
+
+
+
+
+	<!-- Lookbook -->
+
+	<div class="lookbook-slider" id="look">
+		<div class="brand-slider-cont">
+			<p class="title"><span>our</span> lookbook</p>
+			<p class="sub-title">Latest Posts - mens & womens</p>
+		</div>
+	</div>
+
+	<div class="lookbook-items-nav">
+		<a href="#">latest</a>
+		<a href="#">most liked</a>
+		<a href="#">best sellers</a>
+		<a href="#">price low to high</a>
+		<a href="#">price high to low</a>
+	</div>
+	<div class="lookbook-content">
+		<div class="lb-cont-1">
+			<div class="small"><div class="cont-small">
+				<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+			</div>
+			<div class="cont-small-second">
+				<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+			</div></div>
+			<div class="cont-big">
+				<a href="#" class="title">Jane’s<span>&nbsp;lookbook</span></a>
+				<p class="subtitle">get the look for under £200!</p>
+				<p>We invited actress Jane Marshall to join us <br>for the day and choose her perfect outfit from <br>our vast range of womens fashion.</p>
+				<p>This is of course not true as this is just a design <br>for a website and this is simply filler text.</p>
+				<a href="#" class="btn">view now</a>
+			</div>
+		</div>
+		<div class="lb-cont-2">
+			<div class="cont-small">
+				<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+			</div>
+			<div class="cont-small-second">
+				<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+			</div>
+			<div class="cont-small-third">
+				<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div class="lb-cont-3">
+			<div class="cont-big">
+				<a href="#" class="title">Win<span>&nbsp;a new look!</span></a>
+				<p class="subtitle">add looks or items to your lookbook for a chance of winning </p>
+				<p>See an item or a complete look you like, click the button to add it to your<br>lookbook and you’ll be automatically entered to our monthly draw where<br>one winner gets a £300 gift voucher to spend on our website!</p>
+				<p>Terms: No purchase necessary. Vouchers are non-transferable and no<br>cash alternative is ofered. Competition is for members only..</p>
+				<a href="#" class="btn">shop now</a>
+			</div>
+			<div class="cont-small">
+				<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="line"><div class="line-cont"></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Local Stores -->
+	<div class="local-slider" id="stores">
+		<div class="local-slider-cont">
+			<p class="title"><span>Local</span> stores</p>
+			<p class="sub-title">Find a store near you</p>
+		</div>
+	</div>
+	<div class="pre-local-cont">
+		<div class="local-cont">
+			<div class="title">London</div>
+			<div class="local-text">
+				<p>180-182 Regent Street, London, W1B 5BT</p> <br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
+			</div>
+			<a href="#" class="btn">view details</a>
+		</div>
+	</div>
+	<div class="local-map">
+		<div class="map">
+			<select id="style-selector" class="selector-control">
+				<option value="silver" selected="selected"></option>
+			</select>
+			<div id="map"></div>
+		</div>
+		<div class="addres"> 
+			<div class="addres-content">
+				<div class="title">London</div>
+				<div class="local-text">
+					<p>180-182 Regent Street, London, W1B 5BT</p> <br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
+				</div>
+				<p href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>  180-182 Regent Street, London, W1B 5BT</p>
+				<p href="#"><i class="fa fa-phone" aria-hidden="true"></i> 0123-456-789</p>
+				<p href="#"><i class="fa fa-link" aria-hidden="true"></i> www.yourwebsite.com</p>
+				<p href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@yourwebsite.com</p>
+				<p href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> Monday-Friday: 10am to 10pm, Saturday-Sunday: 10am to 8pm</p>
+				<div class="buttons">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
 
+	</div>
 
 
 
@@ -406,7 +706,7 @@
 
 
 
-		<div class="line"><div class="line-cont"></div></div>
+	<div class="line"><div class="line-cont"></div></div>
 
 
 
@@ -415,370 +715,236 @@
 
 
 
-		<!-- Lookbook -->
 
-		<div class="lookbook-slider">
-			<div class="brand-slider-cont">
-				<p class="title"><span>our</span> lookbook</p>
-				<p class="sub-title">Latest Posts - mens & womens</p>
-			</div>
+
+	<!-- Registration -->
+	<div class="registration-slider" id="register">
+		<div class="registration-slider-cont">
+			<p class="title"><span>welcome</span> to Ave</p>
+			<p class="sub-title">sign in or register</p>
 		</div>
-
-		<div class="lookbook-items-nav">
-			<a href="#">latest</a>
-			<a href="#">most liked</a>
-			<a href="#">best sellers</a>
-			<a href="#">price low to high</a>
-			<a href="#">price high to low</a>
-		</div>
-		<div class="lookbook-content">
-			<div class="lb-cont-1">
-				<div class="small"><div class="cont-small">
-					<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-				</div>
-				<div class="cont-small-second">
-					<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-				</div></div>
-				<div class="cont-big">
-					<a href="#" class="title">Jane’s<span>&nbsp;lookbook</span></a>
-					<p class="subtitle">get the look for under £200!</p>
-					<p>We invited actress Jane Marshall to join us <br>for the day and choose her perfect outfit from <br>our vast range of womens fashion.</p>
-					<p>This is of course not true as this is just a design <br>for a website and this is simply filler text.</p>
-					<a href="#" class="btn">view now</a>
-				</div>
+	</div>
+	<div class="pre-reg">
+		<div class="registration-content">
+			<div class="sigin-form">
+				<p>sign in</p>
+				<form action="#" method="#" id="contactform" role="form">
+					<div class="form-group">
+						<label for="contactemail"></label>
+						<input type="email" class="form-control" id="contactemail" placeholder="E-mail" required>
+					</div>
+					<div class="form-group">
+						<label for="password"></label>
+						<input id="password" class="password" placeholder="Password" type="password" required>
+					</div>
+					<div class="form-group-btn">
+						<button type="submit" class="btn">Sign in</button>
+						<a href="#" >Forgot your Password <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+				</form>
 			</div>
-			<div class="lb-cont-2">
-				<div class="cont-small">
-					<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-				</div>
-				<div class="cont-small-second">
-					<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-				</div>
-				<div class="cont-small-third">
-					<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-				</div>
-			</div>
-			<div class="lb-cont-3">
-				<div class="cont-big">
-					<a href="#" class="title">Win<span>&nbsp;a new look!</span></a>
-					<p class="subtitle">add looks or items to your lookbook for a chance of winning </p>
-					<p>See an item or a complete look you like, click the button to add it to your<br>lookbook and you’ll be automatically entered to our monthly draw where<br>one winner gets a £300 gift voucher to spend on our website!</p>
-					<p>Terms: No purchase necessary. Vouchers are non-transferable and no<br>cash alternative is ofered. Competition is for members only..</p>
-					<a href="#" class="btn">shop now</a>
-				</div>
-				<div class="cont-small">
-					<a href="#" class="first"><i class="fa fa-info" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-				</div>
-			</div>
-		</div>
 
+			<div class="border"></div>
 
-
-
-
-
-
-
-
-		<div class="line"><div class="line-cont"></div></div>
-
-
-
-
-
-
-
-
-
-
-		<!-- Registration -->
-		<div class="registration-slider">
-			<div class="registration-slider-cont">
-				<p class="title"><span>welcome</span> to Ave</p>
-				<p class="sub-title">sign in or register</p>
-			</div>
-		</div>
-		<div class="pre-reg">
-			<div class="registration-content">
-				<div class="sigin-form">
-					<p>sign in</p>
-					<form action="#" method="#" id="contactform" role="form">
-						<div class="form-group">
-							<label for="contactemail"></label>
-							<input type="email" class="form-control" id="contactemail" placeholder="E-mail" required>
-						</div>
-						<div class="form-group">
-							<label for="password"></label>
-							<input id="password" class="password" placeholder="Password" type="password" required>
-						</div>
-						<div class="form-group-btn">
-							<button type="submit" class="btn">Sign in</button>
-							<a href="#" >Forgot your Password <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			<div class="registration-form">
+				<p>Register</p>
+				<form role="form">
+					<div class="form-group">
+						<label for="contactemail"></label>
+						<input type="email" class="form-control" id="contactemail" placeholder="E-mail" required>
+					</div>
+					<div class="form-group">
+						<label for="password"></label>
+						<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+					</div>
+					<div class="form-group">
+						<label for="password"></label>
+						<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" placeholder="Confirm" required>
+					</div>
+					<div class="form-group input">
+						<input type="checkbox" id="check" data-error="Before you wreck yourself" required>
+						<label for="check">Sign up for exclusive updates, discounts, new arrivals, contests, and more!</label>
+					</div>
+					<div class="form-group form-group-reg">
+						<button type="submit" class="btn">Create Account</button>
+						<p>By clicking ‘Create Account’, you <br>
+							agree to our <a href="#"> Privacy Policy <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
 						</div>
 					</form>
 				</div>
+			</div>
+		</div>
 
-				<div class="border"></div>
 
-				<div class="registration-form">
-					<p>Register</p>
-					<form role="form">
-						<div class="form-group">
-							<label for="contactemail"></label>
-							<input type="email" class="form-control" id="contactemail" placeholder="E-mail" required>
-						</div>
-						<div class="form-group">
-							<label for="password"></label>
-							<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
-						</div>
-						<div class="form-group">
-							<label for="password"></label>
-							<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" placeholder="Confirm" required>
-						</div>
-						<div class="form-group input">
-							<input type="checkbox" id="check" data-error="Before you wreck yourself" required>
-							<label for="check">Sign up for exclusive updates, discounts, new arrivals, contests, and more!</label>
-						</div>
-						<div class="form-group form-group-reg">
-							<button type="submit" class="btn">Create Account</button>
-							<p>By clicking ‘Create Account’, you <br>
-								agree to our <a href="#"> Privacy Policy <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
-							</div>
-						</form>
+
+
+
+
+
+
+		<div class="line"><div class="line-cont"></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="pre-ac">
+				<section class="ac-container">
+					<div>
+						<input id="ac-1" name="accordion-1" type="checkbox" />
+						<label for="ac-1">Information <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
+						<article class="ac-1">
+							<a href="#">The brand</a> <br>
+							<a href="#">Local stores</a> <br>
+							<a href="#">Customer service</a> <br>
+							<a href="#">Privacy & cookies</a> <br>
+							<a href="#">Site map</a>
+						</article>
 					</div>
-				</div>
+					<div>
+						<input id="ac-2" name="accordion-1" type="checkbox" />
+						<label for="ac-2">Why buy from us <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
+						<article class="ac-1">
+							<a href="#">Shipping & returns</a> <br>
+							<a href="#">Secure shopping</a> <br>
+							<a href="#">Testimonials</a> <br>
+							<a href="#">Award winning</a> <br>
+							<a href="#">Ethical trading</a>
+						</article>
+					</div>
+					<div>
+						<input id="ac-3" name="accordion-1" type="checkbox" />
+						<label for="ac-3">Your account <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
+						<article class="ac-2">
+							<a href="#">Sign in</a> <br>
+							<a href="#">Register</a> <br>
+							<a href="#">View cart</a> <br>
+							<a href="#">View your lookbook</a> <br>
+							<a href="#">Track an order</a> <br>
+							<a href="#">Update information</a>
+						</article>
+					</div>
+					<div>
+						<input id="ac-4" name="accordion-1" type="checkbox" />
+						<label for="ac-4">Lookbook <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
+						<article class="ac-2">
+							<a href="#">Latest posts</a> <br>
+							<a href="#">Men’s lookbook</a> <br>
+							<a href="#">Women’s lookbook</a> <br>
+							<a href="#">Lookbooks RSS feed</a> <br>
+							<a href="#">View your lookbook</a> <br>
+							<a href="#">Delete your lookbook</a>
+						</article>
+					</div>
+					<div>
+						<input id="ac-5" name="accordion-1" type="checkbox" />
+						<label for="ac-5">contact details <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
+						<article class="ac-3">
+							<a href="#">Head Office: Avenue Fashion, 180-182 Regent Street, London.</a> <br>
+							<a href="#" class="tel">Telephone: 0123-456-789</a> <br>
+							<a href="#">Email: support@yourwebsite.com</a>
+						</article>
+					</div>
+				</section>
 			</div>
 
 
 
-
-
-
-
-
-			<div class="line"><div class="line-cont"></div></div>
-
-
-
-
-
-
-
-
-			<!-- Local Stores -->
-			<div class="local-slider">
-				<div class="local-slider-cont">
-					<p class="title"><span>Local</span> stores</p>
-					<p class="sub-title">Find a store near you</p>
+			<div class="footer-cont-1">
+				<div class="colum colum-1">
+					<a href="#" class="main">Information</a>
+					<a href="#">The brand</a>
+					<a href="#">Local stores</a>
+					<a href="#">Customer service</a>
+					<a href="#">Privacy & cookies</a>
+					<a href="#">Site map</a>
+				</div>
+				<div class="colum colum-2">
+					<a href="#" class="main">Why buy from us</a>
+					<a href="#">Shipping & returns</a>
+					<a href="#">Secure shopping</a>
+					<a href="#">Testimonials</a>
+					<a href="#">Award winning</a>
+					<a href="#">Ethical trading</a>
+				</div>
+				<div class="colum colum-3">
+					<a href="#" class="main">Your account</a>
+					<a href="#">Sign in</a>
+					<a href="#">Register</a>
+					<a href="#">View cart</a>
+					<a href="#">View your lookbook</a>
+					<a href="#">Track an order</a>
+					<a href="#">Update information</a>
+				</div>
+				<div class="colum colum-4">
+					<a href="#" class="main">Lookbook</a>
+					<a href="#">Latest posts</a>
+					<a href="#">Men’s lookbook</a>
+					<a href="#">Women’s lookbook</a>
+					<a href="#">Lookbooks RSS feed</a>
+					<a href="#">View your lookbook</a>
+					<a href="#">Delete your lookbook</a>
+				</div>
+				<div class="colum colum-5">
+					<a href="#" class="main">Contact details</a>
+					<a href="#">Head Office: Avenue Fashion, <br>180-182 Regent Street, London.</a>
+					<a href="#" class="tel">Telephone: 0123-456-789</a>
+					<a href="#">Email: support@yourwebsite.com</a>
 				</div>
 			</div>
-			<div class="pre-local-cont">
-				<div class="local-cont">
-					<div class="title">London</div>
-					<div class="local-text">
-						<p>180-182 Regent Street, London, W1B 5BT</p> <br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
-					</div>
-					<a href="#" class="btn">view details</a>
+			<div class="footer-btn">
+				<div class="footer-btn-left">
+					<a href="#">award winner <br><span>fashion awards 2016</span></a>
+				</div>
+				<div class="footer-btn-right">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
 				</div>
 			</div>
-			<div class="local-map">
-				<div class="map">
-					<select id="style-selector" class="selector-control">
-						<option value="silver" selected="selected"></option>
-					</select>
-					<div id="map"></div>
-				</div>
-				<div class="addres"> 
-					<div class="addres-content">
-						<div class="title">London</div>
-						<div class="local-text">
-							<p>180-182 Regent Street, London, W1B 5BT</p> <br>
-							Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
-						</div>
-						<p href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>  180-182 Regent Street, London, W1B 5BT</p>
-						<p href="#"><i class="fa fa-phone" aria-hidden="true"></i> 0123-456-789</p>
-						<p href="#"><i class="fa fa-link" aria-hidden="true"></i> www.yourwebsite.com</p>
-						<p href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@yourwebsite.com</p>
-						<p href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> Monday-Friday: 10am to 10pm, Saturday-Sunday: 10am to 8pm</p>
-						<div class="buttons">
-							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-
-
-
-
-
-
-
-
-			<div class="line"><div class="line-cont"></div></div>
-
-
-
-
-
-
-
-
-
-
-
-			<!-- Footer -->
-			<div class="footer">
-				<div class="pre-ac">
-					<section class="ac-container">
-						<div>
-							<input id="ac-1" name="accordion-1" type="checkbox" />
-							<label for="ac-1">Information <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
-							<article class="ac-1">
-								<a href="#">The brand</a> <br>
-								<a href="#">Local stores</a> <br>
-								<a href="#">Customer service</a> <br>
-								<a href="#">Privacy & cookies</a> <br>
-								<a href="#">Site map</a>
-							</article>
-						</div>
-						<div>
-							<input id="ac-2" name="accordion-1" type="checkbox" />
-							<label for="ac-2">Why buy from us <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
-							<article class="ac-1">
-								<a href="#">Shipping & returns</a> <br>
-								<a href="#">Secure shopping</a> <br>
-								<a href="#">Testimonials</a> <br>
-								<a href="#">Award winning</a> <br>
-								<a href="#">Ethical trading</a>
-							</article>
-						</div>
-						<div>
-							<input id="ac-3" name="accordion-1" type="checkbox" />
-							<label for="ac-3">Your account <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
-							<article class="ac-2">
-								<a href="#">Sign in</a> <br>
-								<a href="#">Register</a> <br>
-								<a href="#">View cart</a> <br>
-								<a href="#">View your lookbook</a> <br>
-								<a href="#">Track an order</a> <br>
-								<a href="#">Update information</a>
-							</article>
-						</div>
-						<div>
-							<input id="ac-4" name="accordion-1" type="checkbox" />
-							<label for="ac-4">Lookbook <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
-							<article class="ac-2">
-								<a href="#">Latest posts</a> <br>
-								<a href="#">Men’s lookbook</a> <br>
-								<a href="#">Women’s lookbook</a> <br>
-								<a href="#">Lookbooks RSS feed</a> <br>
-								<a href="#">View your lookbook</a> <br>
-								<a href="#">Delete your lookbook</a>
-							</article>
-						</div>
-						<div>
-							<input id="ac-5" name="accordion-1" type="checkbox" />
-							<label for="ac-5">contact details <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
-							<article class="ac-3">
-								<a href="#">Head Office: Avenue Fashion, 180-182 Regent Street, London.</a> <br>
-								<a href="#" class="tel">Telephone: 0123-456-789</a> <br>
-								<a href="#">Email: support@yourwebsite.com</a>
-							</article>
-						</div>
-					</section>
-				</div>
-
-
-
-				<div class="footer-cont-1">
-					<div class="colum colum-1">
-						<a href="#" class="main">Information</a>
-						<a href="#">The brand</a>
-						<a href="#">Local stores</a>
-						<a href="#">Customer service</a>
-						<a href="#">Privacy & cookies</a>
-						<a href="#">Site map</a>
-					</div>
-					<div class="colum colum-2">
-						<a href="#" class="main">Why buy from us</a>
-						<a href="#">Shipping & returns</a>
-						<a href="#">Secure shopping</a>
-						<a href="#">Testimonials</a>
-						<a href="#">Award winning</a>
-						<a href="#">Ethical trading</a>
-					</div>
-					<div class="colum colum-3">
-						<a href="#" class="main">Your account</a>
-						<a href="#">Sign in</a>
-						<a href="#">Register</a>
-						<a href="#">View cart</a>
-						<a href="#">View your lookbook</a>
-						<a href="#">Track an order</a>
-						<a href="#">Update information</a>
-					</div>
-					<div class="colum colum-4">
-						<a href="#" class="main">Lookbook</a>
-						<a href="#">Latest posts</a>
-						<a href="#">Men’s lookbook</a>
-						<a href="#">Women’s lookbook</a>
-						<a href="#">Lookbooks RSS feed</a>
-						<a href="#">View your lookbook</a>
-						<a href="#">Delete your lookbook</a>
-					</div>
-					<div class="colum colum-5">
-						<a href="#" class="main">Contact details</a>
-						<a href="#">Head Office: Avenue Fashion, <br>180-182 Regent Street, London.</a>
-						<a href="#" class="tel">Telephone: 0123-456-789</a>
-						<a href="#">Email: support@yourwebsite.com</a>
-					</div>
-				</div>
-				<div class="footer-btn">
-					<div class="footer-btn-left">
-						<a href="#">award winner <br><span>fashion awards 2016</span></a>
-					</div>
-					<div class="footer-btn-right">
-						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-					</div>
-				</div>
-				<div class="cont-2">
-					<div class="footer-cont-2">
-						<p>© 2017 Slava Buynyj</p>
-						<p>Avenue Fashion <span>tm</span></p>
-					</div>
+			<div class="cont-2">
+				<div class="footer-cont-2">
+					<p>© 2017 Slava Buynyj</p>
+					<p>Avenue Fashion <span>tm</span></p>
 				</div>
 			</div>
+		</div>
 
 
 
-			<script>
-				$(document).ready(function(){
-					$(".fa-times").click(function(){
-						$(".sidebar_menu").removeClass("open_menu");
-						$(".toggle_menu").removeClass("opacity_null");
-						$("body").removeClass("overflow_body");
-					});
-
-					$(".toggle_menu").click(function(){
-						$(".sidebar_menu").addClass("open_menu");
-						$(".toggle_menu").addClass("opacity_null");
-						$("body").addClass("overflow_body");
-					});
+		<script>
+			$(document).ready(function(){
+				$(".fa-times").click(function(){
+					$(".sidebar_menu").removeClass("open_menu");
+					$(".toggle_menu").removeClass("opacity_null");
+					$("body").removeClass("overflow_body");
 				});
-			</script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAyRnCiySGXdbqDmF8ZuxVobibvSml1SI&callback=initMap" async defer></script>
-		</body>
-		</html>
+
+				$(".toggle_menu").click(function(){
+					$(".sidebar_menu").addClass("open_menu");
+					$(".toggle_menu").addClass("opacity_null");
+					$("body").addClass("overflow_body");
+				});
+
+
+				$(".owl-carousel").owlCarousel({
+					loop: true,
+					items: 1,
+					nav:true,
+					dots: true,
+				});
+			});
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAyRnCiySGXdbqDmF8ZuxVobibvSml1SI&callback=initMap" async defer></script>
+	</body>
+	</html>
